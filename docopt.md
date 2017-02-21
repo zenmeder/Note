@@ -1,12 +1,15 @@
+Docopt
+=====
 docopt 是一款很好用的命令行参数解释器</br>
 docopt 本质上是在 Python 中引入了一种针对命令行参数的形式语言，在代码的最开头使用"""文档注释的形式写出符合要求的文档，就会自动生成对应的parse，体验非常赞。</br>
 样例：
+```python
 #coding:utf-8
-"""命令行火车票查看器</br>
+"""命令行火车票查看器
 
-Usage:</br>
-    ticket [-gkzdt] <from> <to> <date> </br>
-</br>
+Usage:
+    ticket [-gkzdt] <from> <to> <date> 
+
 Options:
     -h,-help: 显示帮助菜单
     -g: 高铁
@@ -14,8 +17,8 @@ Options:
     -z: 直达
     -d: 动车
     -t: 特快
-</br>    
-Example:</br>
+  
+Example:
    ticket -g 北京 上海 2017-1-20</br>
 """
 from docopt import docopt
