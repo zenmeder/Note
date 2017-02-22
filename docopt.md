@@ -30,4 +30,29 @@ def cli():
 	
 if __name__ == '__main__':
 	cli()
-	
+```
+下面根据样例来介绍一下docopt的用法:
+## Usage  
+```
+所有出现在`Usage`:（区分大小写）和一个空行之间的文本都会被识别为一个命令组合，Usage后的第一个词将会被识别为这个程序的名字，所有命令组合的每一个部分（空格分隔）都会成为字典中的一个key.
+```
+### Argument
+形如 `<argument>` 或者 `ARGUMENT` 的文本将会被识别为参数。 在转化后的字典中的取值为 `True` 或者 `False` 。如上面的例子中:  
+```
+ticket [-gkzdt] <from> <to> <date>  
+from to date 都被识别为参数了 
+```
+### Option  
+形如 `[optional elements]` 的文本是可选项。 elements包括上述的三种类型：参数，选项以及命令。在上面的例子里：  
+```
+ticket [-gkzdt] <from> <to> <date>
+[-gkzdt]就是可选项
+```
+### Required elements
+形如 `(required elements)` 的文本是必填项。
+### Another Optional
+形如 `element|another` 的文本是选择项.  
+```
+eg: 
+Usage: my_program go (--up | --down | --left | --right)
+```
