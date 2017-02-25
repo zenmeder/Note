@@ -32,4 +32,4 @@ var wyoming = viewer.entities.add({
 viewer.zoomTo(wyoming);
 ```
 get us the below image  
-![entity](http://cesiumjs.org/images/2015/02-02/OurFirstEntity.jpg)
+![entity](https://github.com/zenmeder/Note/blob/master/Cesium/picture/OurFirstEntity.jpg)
