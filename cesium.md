@@ -1,6 +1,8 @@
 Cesium
 =====
-# Entity
+## Entity
+Below is an example of entity
+
 ```javascript
 var viewer = new Cesium.Viewer('cesiumContainer');
 
@@ -29,3 +31,5 @@ var wyoming = viewer.entities.add({
 
 viewer.zoomTo(wyoming);
 ```
+get us the below image  
+![entity](http://cesiumjs.org/images/2015/02-02/OurFirstEntity.jpg)
